@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<table border="1">
+<tr>
+    <th>Phone</th>
+    <th>Quantity</th>
+    <th>Time</th>
+</tr>
+{% for o in orders %}
+<tr>
+    <td>{{ o.phone }}</td>
+    <td>{{ o.quantity }}</td>
+    <td>{{ o.order_time }}</td>
+</tr>
+{% endfor %}
+</table>
+{% endblock %}

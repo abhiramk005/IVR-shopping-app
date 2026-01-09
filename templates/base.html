@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IVR Admin</title>
+
+    <!-- Correct way to link CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>IVR Admin Panel</h1>
+    <a href="/add-user">Add User</a> |
+    <a href="/broadcast">Broadcast</a> |
+    <a href="/orders">Orders</a>
+    <hr>
+    {% block content %}{% endblock %}
+</body>
+</html>
